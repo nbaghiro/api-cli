@@ -1,0 +1,40 @@
+{
+  "name": "api-cli",
+  "version": "0.1.0",
+  "description": "CLI tool",
+  "keywords": [
+    "nodejs",
+    "json-api",
+    "sequelize",
+    "postgres",
+    "cli"
+  ],
+  "scripts": {
+    "build": "rm -rf build && babel src --ignore test.js -d build",
+    "lint": "standard 'src/**/!(test.js)' --fix --verbose | snazzy"
+  },
+  "author": "Naib Baghirov <naib.baghirov@gmail.com> (https://www.linkedin.com/in/naib-baghirov-03182170/)",
+  "contributors": [
+    "Naib Baghirov <naib.baghirov@gmail.com> (https://www.linkedin.com/in/naib-baghirov-03182170/)"
+  ],
+  "license": "MIT",
+  "bin": {
+    "rs": "build/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "6",
+    "babel-plugin-transform-object-rest-spread": "6",
+    "babel-preset-env": "1",
+    "babel-register": "6",
+    "snazzy": "7",
+    "standard": "10"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "dependencies": {
+    "change-case": "3",
+    "api-boilerplate": "1",
+    "vorpal": "1"
+  }
+}

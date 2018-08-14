@@ -1,0 +1,1 @@
+# Simple CLI tool to interact with Postgres DB
